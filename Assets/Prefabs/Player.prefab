@@ -132,10 +132,11 @@ GameObject:
   - component: {fileID: 1147699917435083378}
   - component: {fileID: 6831731541981036060}
   - component: {fileID: 6089570880250979739}
-  - component: {fileID: 4105466251856739920}
+  - component: {fileID: -1506684262072757944}
+  - component: {fileID: -3638658724076369444}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -207,7 +208,7 @@ CapsuleCollider:
   m_Height: 2.042305
   m_Direction: 1
   m_Center: {x: -0.012531459, y: 0.012824297, z: -0.019849658}
---- !u!114 &4105466251856739920
+--- !u!114 &-1506684262072757944
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -216,19 +217,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 4795333712826943382}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb340ae34c7ed824e90074ec213f201d, type: 3}
+  m_Script: {fileID: 11500000, guid: 89ecb2a9f2b080c4681fcbcf04adab9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  speed: 5
-  jumpHeight: 1.8
-  feet: {fileID: 2352829454417487781}
-  checkRadius: 0.19
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 8
-  coyoteTime: 0.1
-  jumpBuffer: 0.12
-  fallMultiplier: 2.2
-  body: {fileID: 2443938218547528271}
-  squashDuration: 0.18
-  squashY: 0.7
+  moveForce: 10
+--- !u!114 &-3638658724076369444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4795333712826943382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec59a1ea1aa6cbe45ad7cfba8d06e33d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  max: 3
+  iFrames: 1
+  shielded: 0
