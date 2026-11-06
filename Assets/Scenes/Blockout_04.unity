@@ -143,9 +143,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: e1312431dc3639346956eeada2d0bea2, type: 2}
     - target: {fileID: 1482911527110135642, guid: 007652dc4e916ba42bd781cbf6cfe1e9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482911527110135642, guid: 007652dc4e916ba42bd781cbf6cfe1e9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1566204665}
+    - target: {fileID: 1482911527110135642, guid: 007652dc4e916ba42bd781cbf6cfe1e9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1482911527110135642, guid: 007652dc4e916ba42bd781cbf6cfe1e9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: RestartLevel

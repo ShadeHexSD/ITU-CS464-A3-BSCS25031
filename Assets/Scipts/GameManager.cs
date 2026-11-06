@@ -25,9 +25,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject winPanel;
     [SerializeField] GameObject losePanel;
 
-    [Header("Restart buttons inside the win and lose panels")]
-    [SerializeField] Button winRestartButton;
-    [SerializeField] Button loseRestartButton;
+    //[Header("Restart buttons inside the win and lose panels")]
+    //[SerializeField] Button winRestartButton;
+    //[SerializeField] Button loseRestartButton;
 
     int score;
     bool gameEnded;
@@ -49,10 +49,10 @@ public class GameManager : MonoBehaviour
 
     void OnDestroy()
     {
-        if (winRestartButton != null)
-            winRestartButton.onClick.RemoveListener(RestartLevel);
-        if (loseRestartButton != null)
-            loseRestartButton.onClick.RemoveListener(RestartLevel);
+        //if (winRestartButton != null)
+        //    winRestartButton.onClick.RemoveListener(RestartLevel);
+        //if (loseRestartButton != null)
+        //    loseRestartButton.onClick.RemoveListener(RestartLevel);
 
         if (Instance == this) Instance = null;
     }
@@ -64,10 +64,10 @@ public class GameManager : MonoBehaviour
 
         // Unity UI buttons still respond when Time.timeScale is 0.
         // Assign BOTH buttons in the GameManager Inspector. No OnClick setup needed.
-        if (winRestartButton != null)
-            winRestartButton.onClick.AddListener(RestartLevel);
-        if (loseRestartButton != null)
-            loseRestartButton.onClick.AddListener(RestartLevel);
+        //if (winRestartButton != null)
+        //    winRestartButton.onClick.AddListener(RestartLevel);
+        //if (loseRestartButton != null)
+        //    loseRestartButton.onClick.AddListener(RestartLevel);
 
         UpdateScoreUI();
         UpdateUI();
@@ -165,6 +165,7 @@ public class GameManager : MonoBehaviour
     public void RestartLevel()
     {
         Time.timeScale = 1f; // Always unfreeze BEFORE reloading.
+        Debug.Log("RESTART BUTTON CLICKED!");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
