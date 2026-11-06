@@ -1045,6 +1045,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1753228097980360960, guid: 6ac240b0b7fcc5845b501c2457ca85a0, type: 3}
+      propertyPath: points.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753228097980360960, guid: 6ac240b0b7fcc5845b501c2457ca85a0, type: 3}
+      propertyPath: 'points.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1966975833}
     - target: {fileID: 2363536026781771590, guid: 6ac240b0b7fcc5845b501c2457ca85a0, type: 3}
       propertyPath: winRestartButton
       value: 
@@ -1166,6 +1174,11 @@ PrefabInstance:
       addedObject: {fileID: 949820441}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ac240b0b7fcc5845b501c2457ca85a0, type: 3}
+--- !u!4 &1966975833 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1480967260344524912, guid: 6ac240b0b7fcc5845b501c2457ca85a0, type: 3}
+  m_PrefabInstance: {fileID: 1966975832}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1974191382
 PrefabInstance:
   m_ObjectHideFlags: 0
