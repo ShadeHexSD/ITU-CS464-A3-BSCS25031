@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &106136446 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3821532543141350686, guid: 093fe839515f0c94da505bc9b6263ea7, type: 3}
+  m_PrefabInstance: {fileID: 1033648450}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &169276331
 GameObject:
   m_ObjectHideFlags: 0
@@ -209,6 +214,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1977773210624219568, guid: 093fe839515f0c94da505bc9b6263ea7, type: 3}
+      propertyPath: strikeVisual
+      value: 
+      objectReference: {fileID: 106136446}
     - target: {fileID: 2815802120562758920, guid: 093fe839515f0c94da505bc9b6263ea7, type: 3}
       propertyPath: m_Name
       value: Blockout_01
@@ -321,8 +330,13 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 9155273321402718573, guid: 093fe839515f0c94da505bc9b6263ea7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.89
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2115154439648813095, guid: 093fe839515f0c94da505bc9b6263ea7, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5622078658627044844, guid: 093fe839515f0c94da505bc9b6263ea7, type: 3}
       insertIndex: -1
