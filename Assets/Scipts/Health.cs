@@ -1,0 +1,47 @@
+using UnityEngine;
+
+// Lecture 07 hearts, i-frames and optional one-use shield.
+public class Health : MonoBehaviour
+{
+    [SerializeField] int max = 3;
+    [SerializeField] float iFrames = 1f;
+    public bool shielded;
+
+    int current;
+    float invulnerableUntil;
+
+    public int Current => current;
+    public int Max => max;
+
+    void Awake() => current = max;
+
+    // True ONLY when damage landed; Hazard then applies knockback.
+    public bool TakeDamage(int amount)
+    {
+        if (amount <= 0 || current <= 0 || Time.time < invulnerableUntil)
+            return false;
+
+        invulnerableUntil = Time.time + iFrames;
+        if (shielded)
+        {
+            shielded = false;
+            return false;
+        }
+
+        current = Mathf.Max(0, current - amount);
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.UpdateUI();
+            if (current <= 0) GameManager.Instance.PlayerDied();
+        }
+        return true;
+    }
+
+    public void Restore(float protection)
+    {
+        current = max;
+        shielded = false;
+        invulnerableUntil = Time.time + protection;
+        if (GameManager.Instance != null) GameManager.Instance.UpdateUI();
+    }
+}

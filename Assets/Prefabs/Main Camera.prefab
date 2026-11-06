@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7103524931469297849}
   - component: {fileID: 586079470613308262}
   - component: {fileID: 2597578316979206543}
-  - component: {fileID: 7104280624291345329}
+  - component: {fileID: 6577814538196429018}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -138,7 +138,7 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
---- !u!114 &7104280624291345329
+--- !u!114 &6577814538196429018
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,11 +147,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5380799609813383683}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57913094055280d49b41e1c6e4240cdc, type: 3}
+  m_Script: {fileID: 11500000, guid: ae6446afde389e34a9bd47aa2f511969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraFollow
   target: {fileID: 0}
-  offset: {x: 0, y: 20, z: -11}
+  offset: {x: 0, y: 4, z: -7}
   sharpness: 5
   lookAhead: 0.35
   lookHeight: 1

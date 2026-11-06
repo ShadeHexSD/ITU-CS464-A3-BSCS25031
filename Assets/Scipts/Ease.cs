@@ -1,4 +1,3 @@
-// Lecture 05, easing curves: OutBack overshoots slightly and settles at 1.
 public static class Ease
 {
     public static float OutBack(float t)
